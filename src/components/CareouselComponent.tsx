@@ -54,9 +54,12 @@ export default function CareouselComponent(props: Readonly<ICareouselComponentPr
         return (
             <div className="shadow-2xl text-center px-3">
                 <div className="mb-3 hover:scale-105 transition-transform duration-300 rounded-lg overflow-hidden relative">
-                    <div className="absolute bottom-0 right-0 flex flex-row gap-4 items-center">
-                        <Tag severity={"danger"} className="text-white exo-bold text-sm">Not Allowed On The Road</Tag>
-                    </div>
+                    {
+                        !product.allowed_on_road &&
+                        <div className="absolute bottom-0 right-0 flex flex-row gap-4 items-center">
+                            <Tag severity={"danger"} className="text-white exo-bold text-sm">Not Allowed On The Road</Tag>
+                        </div>
+                    }
                     <img src={`https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/${product.size}-yarder-skip.jpg`} alt={product.area}
                         className="shadow-2xl w-full h-60 overflow-hidden" />
                 </div>
