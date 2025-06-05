@@ -24,16 +24,16 @@ export default function StepperComponent(props: Readonly<IStepperComponentProps>
             template: renderItems('Waste Type', "pi pi-trash"),
         },
         {
-            template: renderItems('Waste Type', "pi pi-trash"),
+            template: renderItems('Select Skip', "pi pi-car"),
         },
         {
-            template: renderItems('Waste Type', "pi pi-trash"),
+            template: renderItems('Permit Check', "pi pi-shield"),
         },
         {
-            template: renderItems('Waste Type', "pi pi-trash"),
+            template: renderItems('Choose Date', "pi pi-sync"),
         },
         {
-            template: renderItems('Waste Type', "pi pi-trash"),
+            template: renderItems('Payment', "pi pi-dollar"),
         }
     ];
 
