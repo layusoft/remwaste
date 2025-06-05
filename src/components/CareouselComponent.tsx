@@ -54,7 +54,7 @@ export default function CareouselComponent(props: Readonly<ICareouselComponentPr
             <div className="shadow-2xl text-center px-3">
                 <div className="mb-3 hover:scale-105 transition-transform duration-300 rounded-lg overflow-hidden">
                     <img src={`https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/${product.size}-yarder-skip.jpg`} alt={product.area}
-                        className="shadow-2xl w-full max-h-72 overflow-hidden" />
+                        className="shadow-2xl w-full h-60 overflow-hidden" />
                 </div>
                 <div>
                     <h4 className="mb-1 exo-bold text-xl text-pink-500">{product.size} Yard Skip</h4>
